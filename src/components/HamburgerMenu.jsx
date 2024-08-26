@@ -1,6 +1,7 @@
 import { useState } from "react";
 import '../styles/HamburgerMenu.css';
 
+// Credits to Mikael Ainalem for the Hamburger Menu Animation
 const HamburgerMenu = () => {
     const [isOpen, setIsOpen] = useState(false);
 

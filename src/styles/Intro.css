@@ -1,0 +1,21 @@
+b {
+    color: var(--orange);
+
+}
+
+/* customize cursor */
+.reactTyped::after {
+    content: '|'; /* The cursor character */
+    font-size: 4rem;
+    color: var(--orange);
+    animation: blink 0.7s infinite;
+  }
+  
+  @keyframes blink {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+  }

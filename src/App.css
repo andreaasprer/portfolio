@@ -4,6 +4,7 @@
 }
 
 .Hero {
+  width: 100%;
   position: relative;
   height: 900px;
   display: flex;
@@ -19,8 +20,9 @@
   writing-mode:vertical-rl;
   line-height: 1;
   transition: opacity 0.5s ease, transform 0.5s ease;
-  font-size: .85em;
-  letter-spacing: 0.25em;
+  font-size: .85rem;
+  font-weight: 300;
+  letter-spacing: 0.25rem;
   z-index: 100;
 }
 
@@ -29,14 +31,25 @@
   bottom: 0px;
   left: 45px;
   height: 70px;
-  width: 1px; /* 2rem */
+  width: 1px;
   background-color: white; 
   transition: all 0.3s ease; /
 }
-
 
 .scrollDown.hidden,
 .scrollDownIndicator.hidden {
   transform: translateY(180%); /* Optional: Adjust if you want a smooth transition */
 }
 
+.left {
+  width: 8%;
+}
+.main {
+  width: 58%;
+  background-color: grey;
+}
+
+.ThreeJS {
+  width: 30%;
+  background-color: darkblue;
+}

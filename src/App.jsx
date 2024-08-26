@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import NavBar from './components/NavBar'
+import Intro from './components/Intro'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css'
 
@@ -29,6 +30,12 @@ const App = () => {
         <div className="left">
           <p className={`scrollDown ${isScrolling ? 'hidden' : ''}`}>SCROLLDOWN</p>
           <span className={`scrollDownIndicator ${isScrolling ? 'hidden' : ''}`}></span>
+        </div>
+        <div className="main">
+          <Intro />
+        </div>
+        <div className="ThreeJS">
+          <p>hello</p>
         </div>
       </div>
     </div>
