@@ -1,42 +1,42 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+.App {
+  display: flex;
+  margin: auto; 
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.Hero {
+  position: relative;
+  height: 900px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* Add any other styling you need for the Hero section */
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.scrollDown {
+  position: fixed;
+  bottom: 70px;
+  left: 40px;
+  writing-mode:vertical-rl;
+  line-height: 1;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  font-size: .85em;
+  letter-spacing: 0.25em;
+  z-index: 100;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.scrollDownIndicator {
+  position: fixed;
+  bottom: 0px;
+  left: 45px;
+  height: 70px;
+  width: 1px; /* 2rem */
+  background-color: white; 
+  transition: all 0.3s ease; /
 }
 
-.card {
-  padding: 2em;
+
+.scrollDown.hidden,
+.scrollDownIndicator.hidden {
+  transform: translateY(180%); /* Optional: Adjust if you want a smooth transition */
 }
 
-.read-the-docs {
-  color: #888;
-}

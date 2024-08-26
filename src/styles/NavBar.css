@@ -1,0 +1,39 @@
+.navbar.bg-body-tertiary {
+    background-color: var(--background-color) !important; /* Custom background color */
+    display: flex;
+    margin: 0;
+  }
+
+
+.container-fluid{
+    padding: 0em 2em !important;
+}
+
+
+.ml-auto > *{
+    margin-left: 1em;
+}
+
+.navbar-brand {
+    color: var(--white) !important;
+    margin-right: 20px; /* Adjust if needed */
+}
+  
+.nav-link {
+    color: var(--white) !important;
+    margin-right: 15px; /* Adds space between nav links */
+}
+  
+.nav-link:hover {
+    color: var(--hover-color)!important; /* Slightly transparent white on hover */
+}
+  
+@media only screen and (max-width: 600px) {
+    .navbar-brand {
+      display: none;
+}
+  
+.navbar-nav .nav-link {
+      display: none;
+    }
+}
