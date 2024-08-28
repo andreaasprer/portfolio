@@ -45,11 +45,11 @@
   width: 8%;
 }
 .main {
-  width: 58%;
+  width: 53%;
   background-color: grey;
 }
 
 .ThreeJS {
-  width: 30%;
-  background-color: darkblue;
+  width: 35%;
+  height: 50%;
 }

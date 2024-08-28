@@ -3,8 +3,19 @@ import NavBar from './components/NavBar'
 import Intro from './components/Intro'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css'
+import * as THREE from 'three';
+// for threejs character
+import { Canvas } from "@react-three/fiber";
+import { Experience } from "./components/Experience";
+
+
 
 const App = () => {
+  const color = new THREE.Color("rgb(11,11,11)").convertSRGBToLinear();
+  
+  color.style = color.getStyle();
+  console.log(color.getHex());
+  
   const [isScrolling, setIsScrolling] = useState(false)
 
   const handleScroll = () => {
@@ -35,7 +46,9 @@ const App = () => {
           <Intro />
         </div>
         <div className="ThreeJS">
-          <p>hello</p>
+          <Canvas shadows camera={{ position: [1, 1.5, 2.5], fov: 50 }} style={{ background: "#1c1c1c"}}>
+            <Experience />
+          </Canvas>
         </div>
       </div>
     </div>
