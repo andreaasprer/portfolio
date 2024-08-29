@@ -1,12 +1,17 @@
 b {
     color: var(--orange);
+}
 
+.reactTyped {
+  font-size: 5rem;
+  font-weight: 500;
+  letter-spacing: 2px;
 }
 
 /* customize cursor */
 .reactTyped::after {
-    content: '|'; /* The cursor character */
-    font-size: 4rem;
+    content: '|';
+    font-size: 4.5rem;
     color: var(--orange);
     animation: blink 0.7s infinite;
   }
@@ -18,4 +23,10 @@ b {
     50% {
       opacity: 0;
     }
-  }
+}
+
+.description {
+  width: 60%;
+  font-size: 1.2rem;
+}
+

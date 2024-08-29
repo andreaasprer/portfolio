@@ -1,4 +1,5 @@
 import { ReactTyped } from "react-typed";
+import ContactButton from "./ContactButton";
 import '../styles/Intro.css';
 
 const Intro = () => {
@@ -9,13 +10,16 @@ const Intro = () => {
         typeSpeed={70}
         style={{
           color: 'var(--white)',
-          fontSize: '4rem',
+          fontSize: '4.5rem',
         }}
         showCursor={false}
-        />
+      />
 
       <h2>I build things sometimes</h2>
-      <h3>I'm an aspiring software engineer from Los Angeles, California. I am currently a student at UCLA, studying Computer Science</h3>
+      <div className="description">
+        <p>I'm an aspiring software engineer from Los Angeles, California. I am currently a student at UCLA, studying Computer Science</p>
+      </div>
+      <ContactButton />
     </div>
   );
 };

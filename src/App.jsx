@@ -46,7 +46,7 @@ const App = () => {
           <Intro />
         </div>
         <div className="ThreeJS">
-          <Canvas shadows camera={{ position: [1, 1.5, 2.5], fov: 50 }} style={{ background: "#1c1c1c"}}>
+          <Canvas shadows camera={{ position: [0, .5, 2.5], fov: 50 }} style={{ background: "#1c1c1c"}}>
             <Experience />
           </Canvas>
         </div>
