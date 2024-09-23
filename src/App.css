@@ -1,16 +1,16 @@
 .App {
   display: flex;
+  flex-direction: column;
   margin: auto; 
 }
 
 .Hero {
   width: 100%;
+  height: 100vh;
   position: relative;
-  height: 900px;
   display: flex;
   justify-content: center;
   align-items: center;
-  /* Add any other styling you need for the Hero section */
 }
 
 .scrollDown {
@@ -39,6 +39,7 @@
 .scrollDown.hidden,
 .scrollDownIndicator.hidden {
   transform: translateY(180%); /* Optional: Adjust if you want a smooth transition */
+  opacity: 0;
 }
 
 .left {
@@ -53,3 +54,30 @@
   width: 35%;
   height: 50%;
 }
+
+.content {
+  width: 100%;
+  padding: 1em 10em;
+}
+
+.section-header {
+  display: flex;
+  padding-bottom: 25px;
+}
+
+.section-header::after {
+  content: "";
+  display: block;
+  width: 300px;
+  margin-top: 42px;
+  height: 1px;
+  margin-left: 50px;
+  background-color: var(--orange);
+}
+
+.section-title {
+  font-size: 53px;
+  font-weight: 500;
+}
+
+

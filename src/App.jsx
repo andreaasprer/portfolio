@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import NavBar from './components/NavBar'
 import Intro from './components/Intro'
+import AboutMe from './components/AboutMe'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css'
 import * as THREE from 'three';
@@ -50,6 +51,9 @@ const App = () => {
             <Experience />
           </Canvas>
         </div>
+      </div>
+      <div className='content'>
+        <AboutMe />
       </div>
     </div>
   )

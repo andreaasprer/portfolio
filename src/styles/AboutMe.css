@@ -1,0 +1,26 @@
+.info {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.about-description {
+    width: 65%;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+
+.about-image {
+    display: flex;
+    justify-content: flex-end; /* Ensures the image sticks to the right */
+}
+
+.about-image img {
+    max-width: 300px;
+    border-radius: 13px;
+    box-shadow: 6px 13px 23px -5px rgba(0, 0, 0, 0.808);
+    border: none;
+}

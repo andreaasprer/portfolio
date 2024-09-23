@@ -17,7 +17,7 @@ const Intro = () => {
 
       <h2>I build things sometimes</h2>
       <div className="description">
-        <p>I'm an aspiring software engineer from Los Angeles, California. I am currently a student at UCLA, studying Computer Science</p>
+        <p>I'm an aspiring software engineer from Los Angeles, California. I am currently a student at UCLA, studying Computer Science. I have a passion for all things technology from fullstack development to human-computer interactions.</p>
       </div>
       <ContactButton />
     </div>
