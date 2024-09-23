@@ -1,4 +1,9 @@
 import selfie from '../images/selfie.png'
+import SkillCard from './SkillCard'
+import cppIcon from '../images/cpp.png'
+import pythonIcon from '../images/python.png'
+import jsIcon from '../images/js.png'
+import reactIcon from '../images/react.png'
 import '../styles/AboutMe.css'
 
 const AboutMe = () => {
@@ -21,6 +26,12 @@ const AboutMe = () => {
             </div>
             <div className='about-skills'>
                 <p>MY SKILLS</p>
+                <div className='skills-display'>
+                    <SkillCard img={cppIcon} description='C++ Icon' text='C++'/>
+                    <SkillCard img={pythonIcon} description='Python Icon' text='PYTHON'/>
+                    <SkillCard img={jsIcon} description='JavaScript Icon' text='JAVASCRIPT ES6+'/>
+                    <SkillCard img={reactIcon} description='React Icon' text='REACT'/>
+                </div>
             </div>
         </div>
         
